@@ -1,0 +1,12 @@
+<div class="column60">
+    <div class="contentblock">
+        <?php 
+write_log(__FILE__,__LINE__);    
+
+$form->displayForm('Log In'); 
+
+write_log(__FILE__,__LINE__);    
+
+?>
+    </div>
+</div>

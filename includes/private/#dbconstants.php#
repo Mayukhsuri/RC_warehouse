@@ -1,0 +1,10 @@
+<?php
+
+    $bigpepper = "25uoli1gIckxxO02887xwQprnzEEd5Yu";
+
+    define("DBSERVER","devwsql4");
+    define("DBNAME","RCWarehouse");
+//    define("DBUSER","svcDataLogistics");
+//    define("DBPASSWD",'3d#D4f$F');
+
+?>

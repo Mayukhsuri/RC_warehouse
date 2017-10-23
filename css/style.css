@@ -1,0 +1,783 @@
+/**************************************************************/
+/*  CSS RESET                                                 */
+/**************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/**************************************************************/
+/*  BODY STYLE                                                */
+/**************************************************************/
+
+body {
+    color: #333;
+    background-color: #e8e8e8;
+    font-family: Verdana, Calibri, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: auto;
+    margin: 0;
+    padding: 0;
+    padding: 35px 0 0 0;  /* FIXED MENUBAR STYLE ONLY **************************************************** FIXED MENUBAR STYLE ONLY */
+}
+
+.footer {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    margin: 25px 0;
+    padding: 25px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+
+
+
+/**************************************************************/
+/*  MAIN MENUBAR                                              */
+/**************************************************************/
+
+.menubar {
+    display: block;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: solid 1px #999;
+    position: fixed;  /* FIXED MENUBAR STYLE ONLY ******************************************************* FIXED MENUBAR STYLE ONLY */
+    top: 0;  /* FIXED MENUBAR STYLE ONLY **************************************************************** FIXED MENUBAR STYLE ONLY */
+    width: 100%;  /* FIXED MENUBAR STYLE ONLY *********************************************************** FIXED MENUBAR STYLE ONLY */
+}
+
+.menubar h2 {
+    float: left;
+    padding: 10px 15px;
+    color: #000;
+}
+
+.menubar a {
+    float: right;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-left: solid 1px #f4f4f4;
+}
+
+.menubar a.selected {
+    background-color: #e8e8e8;
+}
+
+.menubar a:hover {
+    background-color: #800;
+    color: #ffffff;
+}
+
+
+
+/**************************************************************/
+/*  MAIN BLOCK                                                */
+/**************************************************************/
+
+.main {
+    clear: both;
+    margin: 15px auto;
+    max-width: 960px;
+}
+
+.column20 {
+    width: 20%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.column33 {
+    width: 33%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.column40 {
+    width: 40%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.column50 {
+    width: 50%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.column60 {
+    width: 60%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.column67 {
+    width: 67%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.column80 {
+    width: 80%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+.column100 {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+
+
+
+/**************************************************************/
+/*  PAGE MENUBLOCK                                            */
+/**************************************************************/
+
+.menublock {
+    display: block;
+    overflow: hidden;
+    margin: 30px 15px;
+}
+
+.menublock h3 {
+    display: block;
+    overflow: hidden;
+    cursor: default;
+    color: #844;
+    padding: 6px 4px 6px 8px;
+}
+
+.menublock a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    padding: 6px 4px 6px 8px;
+    /* ALTERNATIVE STYLE BELOW */ /*
+    border: solid 1px #e8e8e8;
+    */
+}
+
+.menublock a:hover {
+    color: #800;
+    font-weight: bold;
+    /* ALTERNATIVE STYLE BELOW */ /*
+    background-color: #800;
+    border: solid 1px #400;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: normal;
+    */
+}
+
+
+
+/**************************************************************/
+/*  PAGE CONTENTBLOCK                                         */
+/**************************************************************/
+
+.contentblock {
+    display: block;
+    overflow: hidden;
+    margin: 15px;
+    padding: 15px;
+    border: solid 1px #999;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.contentblock.WARNING {
+    border: solid 1px #800;
+    background-color: #fcb;
+    color: #300;
+    padding: 10px 15px;
+}
+
+.contentblock.MESSAGE {
+    border: solid 1px #008;
+    background-color: #cdf;
+    color: #003;
+    padding: 10px 15px;
+}
+
+.contentblock.CONFIRM {
+    border: solid 1px #080;
+    background-color: #dfd;
+    color: #030;
+    padding: 10px 15px;
+}
+
+.contentblock.WARNING a, .contentblock.MESSAGE a, .contentblock.CONFIRM a {
+    margin: 2px 5px;
+    padding: 5px 10px;
+    border: solid 1px #000;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contentblock.WARNING a:hover, .contentblock.MESSAGE a:hover, .contentblock.CONFIRM a:hover {
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.contentblock h2 {
+    font-size: 18px;
+    color: #800;
+    padding-bottom: 12px;
+}
+
+.contentblock a {
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    margin: 8px 8px 8px 0;
+}
+
+.contentblock a:hover {
+    color: #800;
+    text-decoration: underline;
+}
+
+.contentblock p {
+    font-size: 14px;
+    padding: 12px 0;
+    line-height: 1.5em;
+}
+
+.contentblock img {
+    padding: 5px;
+    background-color: #f4f4f4;
+    border: solid 1px #ccc;
+    margin: 8px 8px 18px 0;
+}
+
+.contentblock .imageblock {
+    display: block;
+    overflow: hidden;
+}
+
+.contentblock .imageblock img {
+    float: left;
+    display: inline-block;
+}
+
+.contentblock .imageblock .data {
+    float: left;
+    display: inline-block;
+}
+
+.contentblock .imageblock .data h3 {
+    color: #800;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 68px 5px 4px 15px;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+
+.contentblock .imageblock .data p {
+    font-size: 12px;
+    margin: 0 5px 0 15px;
+    padding: 0;
+}
+
+.contentblock img:hover {
+    border: solid 1px #000;
+    background-color: #800;
+    cursor: pointer;
+}
+
+.contentblock table {
+    border-collapse: collapse;
+    width: 100%;
+    border: solid 1px #333;
+    margin: 8px 0;
+}
+
+.contentblock table tr {
+    text-align: left;
+}
+
+.contentblock table tr.alt {
+    background-color: #e8e8e8;
+}
+
+.contentblock table tr th {
+    padding: 5px;
+    background-color: #333;
+    color: #ffffff;
+    text-align: left;
+}
+
+.contentblock table tr th.thlink:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.contentblock table tr td {
+    padding: 5px;
+    text-align: left;
+}
+
+.contentblock table tr:hover td {
+    cursor: pointer;
+    background-color: #800;
+    color: #fff;
+}
+
+.contentblock table tr:hover.nolink td {
+    cursor: default;
+    background-color: #555;
+    color: #fff;
+}
+
+.contentblock form {
+    /*-webkit-appearance: none;*/
+}
+
+.contentblock form .formline {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+
+.contentblock form .formline label {
+    width: 30%;
+    float: left;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.contentblock form .formline input {
+    -webkit-appearance: none;
+    width: 60%;
+    float: right;
+    border: solid 1px #aaa;
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+.contentblock form .formline textarea {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 120px;
+    float: right;
+    border: solid 1px #aaa;
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+.contentblock form .formline select {
+    -webkit-appearance: none;
+    width: 62%;
+    float: right;
+    border: solid 1px #aaa;
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.contentblock form .formline select:hover {
+    border: solid 1px #300;
+    background-color: #800;
+    color: #fff;
+}
+
+.contentblock form .formline .optionarray {
+    float: left;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: 10px;
+}
+
+.contentblock form .formline .optionarray input {
+    -webkit-appearance: checkbox;
+    clear: both;
+    float: left;
+    width: auto;
+    display: inline-block;
+    margin: 10px 10px 0 40px;
+    background-color: #f2f2f2;
+}
+
+.contentblock form .formline .optionarray label {
+    font-size: 10px;
+}
+
+.contentblock form .formline .optionarray input[type=radio] {
+    -webkit-appearance: radio;
+}
+
+.contentblock form .formline .optionarray label {
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 50%;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.contentblock .buttonright {
+    float: right;
+}
+
+.contentblock .buttonleft {
+    float: left;
+}
+
+.contentblock .buttonright .disabledbutton, .contentblock .buttonleft .disabledbutton {
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: solid 1px #e8e8e8;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    color: #555;
+    cursor: default;
+    margin: 8px 8px 8px 0;
+}
+
+.contentblock .buttonright a, .contentblock .buttonleft a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: solid 1px #000;
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.contentblock .buttonleft a:hover, .contentblock .buttonright a:hover {
+    background-color: #800;
+    border: solid 1px #300;
+}
+
+.contentblock .formline .buttonleft {
+    margin-left: 40px;
+}
+
+.break {
+    clear: both;
+}
+
+
+
+/**************************************************************/
+/*  PAGE CONTENTBLOCK (SPREADSHEET TABLE)                     */
+/**************************************************************/
+
+.contentblock .spreadsheet table {
+    border-collapse: collapse;
+    width: 100%;
+    border: solid 1px #333;
+    border-top: none;
+    border-bottom: none;
+    margin: 8px 0;
+}
+
+.contentblock .spreadsheet table tr {
+    text-align: left;
+}
+
+.contentblock .spreadsheet table tr.alt {
+    background-color: #e4f8e8;
+}
+
+.contentblock .spreadsheet table tr.total {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.contentblock .spreadsheet table tr th {
+    padding: 5px;
+    background-color: #333;
+    color: #ffffff;
+    text-align: left;
+}
+
+.contentblock .spreadsheet table tr td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: solid 1px #333;
+    border-right: dashed 1px #555;
+}
+
+.contentblock .spreadsheet table tr th.split {
+    background-color: #fff;
+    border-bottom: none;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    border-top: none;
+    border-bottom: none;
+}
+
+.contentblock .spreadsheet table tr td.split {
+    background-color: #fff;
+    border-bottom: none;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    border-top: none;
+    border-bottom: none;
+}
+
+.contentblock .spreadsheet table tr:hover td {
+    cursor: pointer;
+    background-color: inherit;
+    color: inherit;
+}
+
+.contentblock .spreadsheet table tr:hover td.split {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.spacer {
+    display: block;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 10px;
+    border-bottom: dotted 1px #d8d8d8;
+}
+
+
+
+
+/**************************************************************/
+/*  PAGE CONTENTBLOCK (DATA LIST)                             */
+/**************************************************************/
+
+.contentblock .datalist {
+    display: block;
+    overflow: hidden;
+    margin: 5px 0 15px 0;
+}
+
+.contentblock .datalist .dline {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+
+.contentblock .datalist .dline h4 {
+    display: block;
+    overflow: hidden;
+    font-weight: bold;
+    color: #800;
+    font-size: 12px;
+    border-bottom: dotted 1px #ccc;
+}
+
+.contentblock .datalist .dline .label {
+    width: 20%;
+    float: left;
+    font-size: 11px;
+    margin-top: 1px;
+    color: #888;
+}
+
+.contentblock .datalist .dline .data {
+    width: 70%;
+    float: left;
+}
+
+
+
+
+/**************************************************************/
+/*  AH_FORM EXTRA STYLINGS                                    */
+/**************************************************************/
+
+.instruction {
+    /*display: none;*/
+    margin: 5px 0;
+    color: #777;
+    font-style: italic;
+}
+
+.contentblock form h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.contentblock form .formline .datepicker label {
+    width: 36%; 
+}
+
+.contentblock form .formline .datepicker select {
+    width: auto;
+    float: left;
+}
+
+.contentblock form .formline .timepicker label {
+    width: 36%; 
+}
+
+.contentblock form .formline .timepicker select {
+    width: auto;
+    float: left;
+}
+
+.contentblock form .formline .formsubmit input {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: solid 1px #000;
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+    width: auto;
+    float: left;
+    margin-left: 40px;
+}
+
+.contentblock form .formline .formsubmit input:hover {
+    cursor: pointer;
+    background-color: #800;
+    border: solid 1px #300;
+}
+
+.errorline {
+    display: none;
+}
+
+.formline.error {
+    color: #f55;
+    text-decoration: underline;
+}
+
+.errorblock {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    color: #800;
+    font-size: 12px;
+    line-height: 18px;
+    border: solid 1px #800;
+    border-radius: 3px;
+    background-color: #fee;
+}
+
+.formline:hover {
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+table tr a {
+    
+}
+
+table tr:hover a {
+    color: #fff;
+}
+
+table tr:hover a:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
